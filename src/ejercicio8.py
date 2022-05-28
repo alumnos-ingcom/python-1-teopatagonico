@@ -22,7 +22,6 @@ def es_primo(numero):
             i=numero
         i+=1
     return primo
-    pass
 
 def principal():
     """
@@ -38,4 +37,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-

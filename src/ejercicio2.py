@@ -23,13 +23,13 @@ def signo(numero):
         contador=contador-1
         i-=1
     if i==0:
-        signo=0
+        resultado=0
     else:
         if contador==0:
-            signo=1
+            resultado=1
         else:
-            signo=-1
-    return signo
+            resultado=-1
+    return resultado
 
 def principal():
     """

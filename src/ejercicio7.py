@@ -44,12 +44,11 @@ def principal():
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
-    segundos_deci=int(input("Ingrese un numero en segundos: "))
-    horas,minutos,segundos_sexa=decimal_a_sexadecimal(segundos_deci)
-    print(f"{segundos_deci} segundos son {horas} horas, {minutos} minutos y {segundos_sexa} segundos.")
-    segundos_deci=sexadecimal_a_decimal(horas,minutos,segundos_sexa)
-    print(f"{horas} horas, {minutos} minutos y {segundos_sexa} segundos son {segundos_deci} segundos.")
+    seg_deci=int(input("Ingrese un numero en segundos: "))
+    horas,minutos,seg_sexa=decimal_a_sexadecimal(seg_deci)
+    print(f"{seg_deci} segundos son {horas} horas, {minutos} minutos y {seg_sexa} segundos.")
+    seg_deci=sexadecimal_a_decimal(horas,minutos,seg_sexa)
+    print(f"{horas} horas, {minutos} minutos y {seg_sexa} segundos son {seg_deci} segundos.")
 
 if __name__ == "__main__":
     principal()
-

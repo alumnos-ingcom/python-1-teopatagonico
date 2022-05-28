@@ -20,10 +20,7 @@ def es_palindromo(texto):
     while i>=(-1*len(texto)):
         texto_invertido+=texto[i]
         i-=1
-    if texto==texto_invertido:
-        palindromo=True
-    else:
-        palindromo=False
+    palindromo= texto==texto_invertido
     return palindromo
 
 def principal():
@@ -40,4 +37,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-

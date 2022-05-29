@@ -9,7 +9,10 @@ entero retorne una tupla con dichos valores ordenados de
 menor a mayor. Y Viceversa.
 """
 
-from ejercicio3 import compara
+try:
+    from ejercicio3 import compara
+except ImportError:
+    from src.ejercicio3 import compara
 
 def ordenar_mayor_a_menor(uno, dos, tres):
     """

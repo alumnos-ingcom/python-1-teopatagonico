@@ -8,7 +8,10 @@ Escribir una función que retorne una `tuple` con factores
 primos de un numero entero positivo.
 """
 
-from ejercicio8 import es_primo
+try:
+    from ejercicio8 import es_primo
+except ImportError:
+    from src.ejercicio8 import es_primo
 
 def factores_primos(numero):
     """
@@ -16,21 +19,21 @@ def factores_primos(numero):
     Poscondiciones: El resultado debe ser una tupla, los
     elementos de la tupla deben ser enteros positivos.
     """
-    divisores=[]
+    factores=[]
     i=2
     while i<numero:
         if numero%i==0:
-            divisores.append(i)
+            factores.append(i)
         i+=1
-    divisores_primos=[]
+    factores_primos=[]
     i=0
-    while i<len(divisores):
-        divisor=divisores[i]
-        if es_primo(divisor):
-            divisores_primos.append(divisor)
+    while i<len(factores):
+        factor=factores[i]
+        if es_primo(factor):
+            factores_primos.append(factor)
         i+=1
-    divisores_primos=tuple(divisores_primos)
-    return divisores_primos
+    factores_primos=tuple(factores_primos)
+    return factores_primos
 
 def principal():
     """

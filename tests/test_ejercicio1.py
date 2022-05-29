@@ -1,5 +1,5 @@
 ################
-# Nombre - @usuario_github
+# Teo Moreno Piccini - @teopatagonico
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
@@ -16,8 +16,8 @@ def test_convertir_a_celsius():
     programa
     """
     celsius=convertir_a_celsius(212)
-    assert isinstance(celsius,float)
-    assert celsius==100.0
+    assert isinstance(celsius,float),"El valor debe ser un numero de punto flotante"
+    assert celsius==100.0,"El valor es incorrecto"
 
 def test_convertir_a_fahrenheit():
     """
@@ -25,5 +25,5 @@ def test_convertir_a_fahrenheit():
     programa
     """
     fahrenheit=convertir_a_fahrenheit(0)
-    assert isinstance(fahrenheit,float)
-    assert fahrenheit==32.0
+    assert isinstance(fahrenheit,float),"El valor debe ser un numero de punto flotante"
+    assert fahrenheit==32.0,"El valor es incorrecto"

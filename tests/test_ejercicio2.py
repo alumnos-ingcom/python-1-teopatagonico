@@ -1,5 +1,5 @@
 ################
-# Nombre - @usuario_github
+# Teo Moreno Piccini - @teopatagonico
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
@@ -14,21 +14,21 @@ def test_signo_positivo():
     El valor de entrada es un número positivo
     """
     resultado=signo(42)
-    assert isinstance(resultado,int)
-    assert resultado==1
+    assert isinstance(resultado,int),"El valor debe ser un numero entero"
+    assert resultado==1,"El valor es incorrecto"
 
 def test_signo_cero():
     """
     El valor de entrada es cero
     """
     resultado=signo(0)
-    assert isinstance(resultado,int)
-    assert resultado==0
+    assert isinstance(resultado,int),"El valor debe ser un numero entero"
+    assert resultado==0,"El valor es incorrecto"
 
 def test_signo_negativo():
     """
     El valor de entrada es un número negativo
     """
     resultado=signo(-42)
-    assert isinstance(resultado,int)
-    assert resultado==-1
+    assert isinstance(resultado,int),"El valor debe ser un numero entero"
+    assert resultado==-1,"El valor es incorrecto"

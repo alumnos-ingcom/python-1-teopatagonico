@@ -8,7 +8,10 @@ Escribir una función que indique con `True` si un número entero
 es multiplo de otro, utilizando sumas y restas.
 """
 
-from ejercicio5 import division_lenta
+try:
+    from ejercicio5 import division_lenta
+except ImportError:
+    from src.ejercicio5 import division_lenta
 
 def es_multiplo(numero, multiplo):
     """
